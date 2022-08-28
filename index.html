@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/9c8b6560a0.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <header class="container">
-        <img class="logo" src="./assets/logo-n.jpg" alt="">
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo ms-3" src="./assets/logo-n.jpg" alt="">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                  </li>
+            </div>
+          </nav>
     </header>
-    <section id="home" class="container parallax">
+    <section id="home" class="container-fluid parallax min-vh-100">
         <div class="content">
             <h1 class="main-title text-white text-center">
                 Estudio Jurídico Especializado
@@ -32,52 +49,60 @@
             <p class="description text-white text-center">
                 Si tuviste un accidente de tránsito o laboral, podes reclamar. Nosotros te indicamos como
             </p>
-            <a href="#" class="btn btn-warning">Contactanos</a>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="left-side">
-            <h1 class="main-title">Servicios</h1>
-            <p class="description-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nisi ab delectus eum exercitationem, atque sit dolores modi assumenda placeat sunt quisquam itaque aperiam eius labore laboriosam esse! Hic, repellendus!</p>
-            <ul class="services-list">
-                <li>Acidentes de transito</li>
-                <li>Accidentes laborales</li>
-                <li>Enfermedades laborales</li>
-                <li>Indemnizaciones por despido</li>
-            </ul>
-        </div>
-        <div class="right-side box-content">
-            <div class="box-item">
-                <i class="fas fa-thumbs-up fa-3x"></i>
-                <span class="item-label">Derecho laboral</span>
-            </div>
-            <div class="box-item">
-                <i class="fas fa-thumbs-up fa-3x"></i>
-                <span class="item-label">Defensa del Consumidor</span>
-            </div>
-            <div class="box-item">
-                <i class="fas fa-thumbs-up fa-3x"></i>
-                <span class="item-label">Derecho Administrativo</span>
-            </div>
-            <div class="box-item">
-                <i class="fas fa-thumbs-up fa-3x"></i>
-                <span class="item-label">Seguros</span>
-            </div>
-            <div class="box-item">
-                <i class="fas fa-thumbs-up fa-3x"></i>
-                <span class="item-label">Mediaciones y Arbitrajes</span>
-            </div>
-            <div class="box-item">
-                <i class="fas fa-thumbs-up fa-3x"></i>
-                <span class="item-label">Contratos</span>
+            <div class="row">
+                <div class="col text-center">
+                  <button class="btn btn-danger">Contactanos</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="parallax-about">
-        <div class="content">
-            <h1 class="main-title text-center text-warning">
+    <section id="services" class="container-fluid min-vh-100">
+        <div class="row mt-5">
+            <div class="col-md-6 col-lg-6 col-sm-12 mt-5">
+                <h1 class="main-title mt-5 pt-5 display-5">Servicios</h1>
+                <p class="description-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nisi ab delectus eum exercitationem, atque sit dolores modi assumenda placeat sunt quisquam itaque aperiam eius labore laboriosam esse! Hic, repellendus!</p>
+                <ul class="services-list">
+                    <li>Acidentes de transito</li>
+                    <li>Accidentes laborales</li>
+                    <li>Enfermedades laborales</li>
+                    <li>Indemnizaciones por despido</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 mt-5 pt-5">
+                <div class="box-content mt-5 pt-5">
+                    <div class="box-item my-3">
+                        <i class="fas fa-thumbs-up fa-3x"></i>
+                        <span class="item-label">Derecho laboral</span>
+                    </div>
+                    <div class="box-item">
+                        <i class="fas fa-thumbs-up fa-3x"></i>
+                        <span class="item-label">Defensa del Consumidor</span>
+                    </div>
+                    <div class="box-item">
+                        <i class="fas fa-thumbs-up fa-3x"></i>
+                        <span class="item-label">Derecho Administrativo</span>
+                    </div>
+                    <div class="box-item">
+                        <i class="fas fa-thumbs-up fa-3x"></i>
+                        <span class="item-label">Seguros</span>
+                    </div>
+                    <div class="box-item">
+                        <i class="fas fa-thumbs-up fa-3x"></i>
+                        <span class="item-label">Mediaciones y Arbitrajes</span>
+                    </div>
+                    <div class="box-item">
+                        <i class="fas fa-thumbs-up fa-3x"></i>
+                        <span class="item-label">Contratos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container-fluid parallax-about min-vh-100">
+        <div class="content mt-5 pt-5">
+            <h1 class="main-title text-center text-warning mt-5">
                 Nosotros
             </h1>
             <p class="description-about text-center">
@@ -89,53 +114,54 @@
             <p class="description-about text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio at magni quis animi fugiat repudiandae facere molestiae accusantium, iure quos, debitis minima commodi, repellendus velit id nihil ut nesciunt minus?
             </p>
-            <p class="description-about text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio at magni quis animi fugiat repudiandae facere molestiae accusantium, iure quos, debitis minima commodi, repellendus velit id nihil ut nesciunt minus?
-            </p>
         </div>
     </section>
 
-    <section id="contact">
-        
-        <div class="left-side">
-            <h1 class="main-title text-left">Contacto</h1>
-            <div class="contact-info">
-                <h3 class="contact-title">Whatsapp</h3>
-                <span class="contact-data">+54 3422 23123</span>
-            </div>
+    <section id="contact" class="container-fluid min-vh-100">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 mt-5 pt-5">
+                <h1 class="main-title text-left">Contacto</h1>
+                <div class="contact-info">
+                    <h3 class="contact-title">Whatsapp</h3>
+                    <span class="contact-data">+54 3422 23123</span>
+                </div>
 
-            <div class="contact-info">
-                <h3 class="contact-title">Email</h3>
-                <span class="contact-data">info@loremipsum.com</span>
-            </div>
+                <div class="contact-info">
+                    <h3 class="contact-title">Email</h3>
+                    <span class="contact-data">info@loremipsum.com</span>
+                </div>
 
-            <div class="contact-info">
-                <h3 class="contact-title">Direccion</h3>
-                <span class="contact-data">Main direction 117, Cordoba, Argentina</span>
+                <div class="contact-info">
+                    <h3 class="contact-title">Direccion</h3>
+                    <span class="contact-data">Main direction 117, Cordoba, Argentina</span>
+                </div>
             </div>
-        </div>
-        <div class="right-side">
-            <h2 class="form-title text-center">Formulario de contacto</h2>
-            <form action="" class="form">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input class="form-control" type="text" id="name" for="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input class="form-control" type="email" id="email" for="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="btn btn-warning" type="submit">Enviar</button>
-            </form>
-        </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 mt-5 pt-5">
+                <h2 class="form-title">Formulario de contacto</h2>
+                <form action="" class="form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input class="form-control" type="text" id="name" for="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" for="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-warning" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>    
     </section>
 
     <footer>
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
