@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: #191f31;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+}
+
+.menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    float: right;
+    margin: 0 10%;
+}
+
+.menu ul li {
+    float: left;
+    margin-top: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    color: rgb(136, 136, 136);
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.logo {
+    padding-top: 16px;
+    padding-left: 40px;
+    float: left;
+    height: 90%;
+}
+
+/* HOME */
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../assets/home-bg-darken.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* .container {
+
+} */
+
+.content {
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+.description {
+    font-size: 1.5rem;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+/* Button warning */
+
+.content a {
+    float: right;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin: 1rem;
+}
+
+.btn-warning {
+    background: #d85c0a;
+    border: 1px solid #d85c0a;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background: #fff;
+    border: 1px solid #d85c0a;
+    color: #d85c0a;
+}
+
+/* SERVICES */
+
+#services {
+    height: 100vh;
+}
+
+.left-side {
+    float: left;
+    width: 50%;
+}
+
+.right-side {
+    float:right;
+    width: 50%;
+}
+
+.description-service {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.services-list {
+    list-style: square;
+    margin-left: 30px;
+}
+
+.services-list li {
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.box-content {
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-item {
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.box-item i, .item-label {
+    display: block;
+    margin-top: 20px;
+}
+
+.item-label {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ABOUT */
+
+#about {
+    height: 100vh;
+}
+
+.description-about {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 20px 20%;
+    text-align: left;
+}
+
+.text-warning {
+    color: #d85c0a;
+}
+
+.parallax-about {
+    /* The image used */
+    background-image: url("../assets/parallax-about.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contact */
+#contact {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-info {
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.text-left {
+    text-align: left;
+    padding: 50px;
+}
+
+.form {
+    width: 80%;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    line-height: none;
+    border-style: none none solid none;
+}
+
+.form input:focus, textarea:focus {
+    outline: none;
+}
+
+.form button {
+    float: right;
+}
