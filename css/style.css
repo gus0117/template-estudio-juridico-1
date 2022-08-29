@@ -153,8 +153,9 @@ html {
     text-align: left;
 }
 
-.text-warning {
-    color: #d85c0a;
+.about-title {
+    color: #af4609;
+    font-family: 'Poppins', sans-serif;
 }
 
 .parallax-about {
@@ -173,7 +174,6 @@ html {
 
 /* Contact */
 #contact {
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -205,4 +205,23 @@ html {
 
 .form textarea {
     resize: none;
+}
+
+/* FOOTER */
+
+.menu-footer {
+    list-style: none;    
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: bisque;
+}
+
+.menu-footer a:hover {
+    color: #d85c0a;
+}
+
+.contact-list {
+    list-style: none;
 }
