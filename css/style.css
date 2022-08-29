@@ -225,3 +225,7 @@ html {
 .contact-list {
     list-style: none;
 }
+
+#footer {
+    background-color: #191f31;
+}
