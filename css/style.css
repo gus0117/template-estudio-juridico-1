@@ -123,13 +123,13 @@ html {
 .box-content {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, 186px);
-
+    max-width: 605px;
+    grid-template-columns: repeat(auto-fit, 140px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box-item {
-    margin-bottom: 10px;
+    margin: 10px auto;
     padding: 10px;
     font-size: 14px;
     text-align: center;

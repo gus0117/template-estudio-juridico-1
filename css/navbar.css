@@ -25,6 +25,7 @@
     display: inline;
     float: right;
     font-size: 18px;
+    padding-top: 15px;
   }
   
   .nav > .nav-links > a {
@@ -32,6 +33,7 @@
     padding: 13px 17px 13px 10px;
     text-decoration: none;
     color: #838282;
+    transition: 0.4s;
   }
   
   .nav > .nav-links > a:hover {
@@ -58,7 +60,7 @@
       display: inline-block;
       width: 50px;
       height: 50px;
-      padding: 13px;
+      padding: 15px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
@@ -73,7 +75,7 @@
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color: #191f31;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -90,5 +92,8 @@
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+    }
+    .nav-logo {
+        width: 35%;
     }
   }
