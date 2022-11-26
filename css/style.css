@@ -11,6 +11,19 @@ html {
     scroll-behavior: smooth;
 }
 
+.icon-warning {
+    color: #fd9800;
+}
+
+#contact {
+    max-width: 1090px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+
 /* HEADER */
 
 .menu {
@@ -154,7 +167,7 @@ html {
 }
 
 .about-title {
-    color: #af4609;
+    color: #fd9800;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -187,45 +200,3 @@ html {
     padding: 50px;
 }
 
-.form {
-    width: 80%;
-}
-
-.form-title {
-    font-size: 1.5rem;
-    font-weight: 300;
-    padding: 30px;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form textarea {
-    resize: none;
-}
-
-/* FOOTER */
-
-.menu-footer {
-    list-style: none;    
-}
-
-.menu-footer a {
-    text-decoration: none;
-    color: bisque;
-}
-
-.menu-footer a:hover {
-    color: #d85c0a;
-}
-
-.contact-list {
-    list-style: none;
-}
-
-#footer {
-    background-color: #191f31;
-}

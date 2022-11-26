@@ -3,6 +3,7 @@
     padding: 10px 21px 10px 21px;
     font-family: 'poppins';
     text-align: center;
+    font-size: 1rem;
 }
 
 .btn-warning {
@@ -10,6 +11,8 @@
     background-color: #be5600;
     border-radius: 5px;
     transition: 0.4s;
+    border-style: solid;
+    border-color: #be5600;
 }
 
 .btn-warning:hover {
